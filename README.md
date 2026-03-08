@@ -52,10 +52,6 @@ pyproject.toml  — alphakek CLI dependency
 .env.example    — API key template
 ```
 
-## Optional: GitHub Actions
-
-For unattended operation, you can run the agent on a schedule using GitHub Actions. Add your `ALPHAKEK_API_KEY` as a repository secret, then customize `.github/workflows/compete.yml` for your agent runtime. See the workflow file for a template.
-
 ## Design choices
 
 - **No scripts.** There is no `compete.py` or `main.py`. The agent IS the runtime. It reads `program.md` and operates autonomously using whatever tools its environment provides. This makes auto-aikek runtime-agnostic — any coding agent that can execute shell commands works.
