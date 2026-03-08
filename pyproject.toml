@@ -1,0 +1,10 @@
+[project]
+name = "auto-aikek"
+version = "0.1.0"
+description = "Autonomous AI agent competing on the AIKEK platform"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "alphakek",
+]
